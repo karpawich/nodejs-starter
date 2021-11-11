@@ -19,10 +19,6 @@ module.exports = async (dbName, dbUrl) => {
   await mongoose
     .connect(url, {
       dbName: name,
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useFindAndModify: false,
-      useCreateIndex: true,
     })
     .catch((error) => {
       debug(chalk.redBright('Database connection failed. ↓'));
