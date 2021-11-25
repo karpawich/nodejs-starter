@@ -2,7 +2,7 @@ const useDebug = require('debug');
 const chalk = require('chalk');
 const db = require('./util/db');
 
-const debug = useDebug('core');
+const debug = useDebug('main');
 
 /**
  * Initializes each primary module of the system.
